@@ -5,3 +5,4 @@
 5. Half-Finished Array-II Exercises.
 6. Fully finished Array-II Exercises.
 7. Fully finished Objects Exercises(Last remaining).
+8. Uploaded Custom exercises related to 'this' in JS.
