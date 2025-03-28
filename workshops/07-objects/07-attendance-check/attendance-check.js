@@ -38,4 +38,8 @@ let classRoom = [
 ];
 
 // YOUR CODE BELOW
-const attendanceCheck = (day) => {};
+const attendanceCheck = (day) => {
+  const result = classRoom.filter((student, index) => {
+    Object.values([student][0]);
+  });
+};

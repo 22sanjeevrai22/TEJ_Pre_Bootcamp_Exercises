@@ -29,6 +29,29 @@ In ES6 classes, this also refers to the newly created instance of the class.
 (Not studied) Getter/Setter methods: this refers to the object when accessing properties via getters/setters.
 
 
+7. 🚀 Unlike variables, this is determined when a function is called, not when it is defined.
+
+How JavaScript Assigns this (Execution Context Rules)
+Global Scope
+
+this refers to window (browser) or global (Node.js).
+
+Inside a Regular Function
+
+this depends on how the function is called, not where it was defined.
+
+Inside an Object Method
+
+this refers to the object that called the method.
+
+Inside an Arrow Function
+
+this is lexically inherited (it does not create its own this).
+
+Inside a Constructor Function (new keyword)
+
+this refers to the new object being created.
+
 My Exercises from ChatGPT
 1. console.log(this);
 this will refer to global in browser or window in node js
