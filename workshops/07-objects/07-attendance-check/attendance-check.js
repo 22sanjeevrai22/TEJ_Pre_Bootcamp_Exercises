@@ -38,8 +38,22 @@ let classRoom = [
 ];
 
 // YOUR CODE BELOW
-const attendanceCheck = (day) => {
-  const result = classRoom.filter((student, index) => {
-    Object.values([student][0]);
+const attendanceCheck = (searchDay) => {
+  let attendance = {};
+  classRoom.forEach((student, index) => {
+    const studentName = Object.keys(student)[0];
+    const studentData = Object.values(student)[0];
+    studentData.forEach((dayData, index) => {
+      const dayName = Object.keys(dayData)[0];
+      const dayBoolean = Object.values(dayData)[0];
+      if (dayBoolean) {
+        if (!attendance[dayName]) {
+          attendance[dayName] = [];
+        }
+        attendance[dayName].push(studentName);
+      }
+    });
   });
+
+  return attendance[searchDay];
 };
