@@ -9,6 +9,7 @@ const ticTacToe = {
     if (!this.board[row][column]) {
       this.board[row][column] = x;
     }
+    console.log(this.board);
     return this.board;
   },
   clear: function () {
@@ -17,6 +18,7 @@ const ticTacToe = {
       [null, null, null],
       [null, null, null],
     ];
+    console.log(this.board);
     return this.board;
   },
 };

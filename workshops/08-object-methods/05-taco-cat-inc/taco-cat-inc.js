@@ -1,3 +1,5 @@
+// YOUR CODE BELOW
+
 let tacoCatInc = {
   gourmetShell: {
     "hard treat shell": { cost: 2, quantity: 100 },
@@ -25,8 +27,8 @@ let tacoCatInc = {
     categoryList.forEach((category) => {
       const categoryValue = this[category];
       let sum = 0;
-      for (let oppa in categoryValue) {
-        const stock = categoryValue[oppa];
+      for (let stockIndex in categoryValue) {
+        const stock = categoryValue[stockIndex];
         let sum = stock.cost * stock.quantity;
         totalCost += sum;
         // console.log(sum);
@@ -52,5 +54,3 @@ let tacoCatInc = {
 
   cash: 0,
 };
-
-// YOUR CODE BELOW
