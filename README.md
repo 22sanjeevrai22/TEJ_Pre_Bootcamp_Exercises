@@ -7,3 +7,4 @@
 7. Fully finished Objects Exercises.
 8. Uploaded Custom exercises related to 'this' in JS.
 9. Finsihed Object Method Exercises.
+10. Finished PBR & PBV Exercises.
