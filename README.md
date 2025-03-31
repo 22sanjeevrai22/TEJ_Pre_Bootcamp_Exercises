@@ -8,3 +8,4 @@
 8. Uploaded Custom exercises related to 'this' in JS.
 9. Finsihed Object Method Exercises.
 10. Finished PBR & PBV Exercises.
+11. Finished Higher Order Function - I Exercises.
