@@ -25,7 +25,7 @@ console.log(result);
 //Count the repeated number of fruits
 const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
 const result = words.reduce((acc, word) => {
-  if (acc[word] === word) {
+  if (acc[word]) {
     acc[word] += 1; // Increment the count
   } else {
     acc[word] = 1; // Initialize count for the word

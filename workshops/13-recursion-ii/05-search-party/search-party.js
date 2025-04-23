@@ -10,7 +10,7 @@ const searchParty = (name, world) => {
       }
     } else if (
       typeof worldValues === "object" &&
-      worldValues !== null && //ince null is a special "object-like" value, we need to explicitly check for null to avoid it.
+      worldValues !== null && //since null is a special "object-like" value, we need to explicitly check for null to avoid it.
       !Array.isArray(worldValues)
     ) {
       const subLocation = searchParty(name, worldValues);
