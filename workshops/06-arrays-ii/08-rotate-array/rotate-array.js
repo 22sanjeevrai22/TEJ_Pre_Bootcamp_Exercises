@@ -11,3 +11,4 @@ const rotateArray = (array, step) => {
   }
   return array;
 };
+//It's like a circular loop
