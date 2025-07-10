@@ -1,5 +1,6 @@
 // YOUR CODE BELOW
-const rotateArray = (array, step) => {
+//It's like a circular loop
+const rotateArray = (array, step) => { 
   let newArray = [];
   if (step !== undefined) {
     for (let i = 0; i < array.length; i++) {
@@ -11,4 +12,4 @@ const rotateArray = (array, step) => {
   }
   return array;
 };
-//It's like a circular loop
+
