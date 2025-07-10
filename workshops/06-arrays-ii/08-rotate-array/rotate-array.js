@@ -13,3 +13,18 @@ const rotateArray = (array, step) => {
   return array;
 };
 
+const rotateArray = (originalArray, rotateNum) => {
+  const length = originalArray.length;
+
+  // Normalize the rotation number
+  if (rotateNum === 0) return [...originalArray];
+
+  if (rotateNum > 0) {
+    // Right rotation
+    return originalArray.slice(-rotateNum).concat(originalArray.slice(0, length - rotateNum));
+  } else {
+    // Left rotation
+    return originalArray.slice(-rotateNum).concat(originalArray.slice(0, -rotateNum));
+  }
+};
+
