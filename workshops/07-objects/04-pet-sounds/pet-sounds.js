@@ -47,7 +47,7 @@ const petSounds = (searchAnimal, country) => {
   for (let i = 0; i < animalNoises.length; i++) {
     let findAnimal = animalNoises[i];
 
-    if (findAnimal.hasOwnProperty(searchAnimal)) {
+    if (findAnimal.hasOwnProperty(searchAnimal)) { //This not mandatory, works without it 
       return `${pluralAnimal} in ${country} say ${findAnimal[searchAnimal][country]}`;
     }
   }
