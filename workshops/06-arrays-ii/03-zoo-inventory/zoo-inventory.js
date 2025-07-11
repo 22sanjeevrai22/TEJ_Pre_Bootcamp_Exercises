@@ -10,7 +10,7 @@ const zooInventory = (zoo) => {
 //Next Method
 function zooInventory2(arr2) {
   let all = arr2.map(
-    ([name, [another, agess]]) => `${name} the ${another} is ${agess}.`
+    ([name, [another, agess]]) => `${name} the ${another} is ${agess}.`// Destructuring
   );
   return all;
 }
