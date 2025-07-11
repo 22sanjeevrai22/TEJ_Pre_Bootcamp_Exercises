@@ -64,11 +64,22 @@ const leetTranslator = (originalString) => {
     leetMap[letters[i]] = leetChars[i];
   }
   for (let j = 0; j < input.length; j++) {
-    if (input[j] in leetMap) {
-      result = result + leetMap[input[j]];
+    if (input[j] in leetMap) { 
+      result = result + leetMap[input[j]]; //This will work alone
     } else {
       result = result + input[j]; // Keep the character if it's not in leetMap
     }
   }
   return result;
 };
+
+// YOUR CODE BELOW
+function leetTranslator(string){
+  let newLeet=''
+  for(let i=0;i<string.length;i++){
+    let index=letters.indexOf(string[i].toLowerCase())
+    newLeet+=leetChars[index]
+  }
+  return newLeet
+}
+console.log(leetTranslator("Fullstack"));
