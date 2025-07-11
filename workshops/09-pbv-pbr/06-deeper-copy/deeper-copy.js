@@ -5,7 +5,7 @@ function deeperCopy(nestedArr) {
     const element = nestedArr[i];
     if (typeof element === "object") {
       let insideNewArr = [];
-      for (let j = 0; j < element; j++) {
+      for (let j = 0; j < element.length; j++) {
         newArr.push(element[i]);
       }
       newArr.push(insideNewArr);
