@@ -6,3 +6,11 @@ const zooInventory = (zoo) => {
   }
   return resultArray;
 };
+
+//Next Method
+function zooInventory2(arr2) {
+  let all = arr2.map(
+    ([name, [another, agess]]) => `${name} the ${another} is ${agess}.`
+  );
+  return all;
+}
