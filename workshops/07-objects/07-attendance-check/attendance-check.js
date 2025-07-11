@@ -57,3 +57,20 @@ const attendanceCheck = (searchDay) => {
 
   return attendance[searchDay];
 };
+
+
+// YOUR CODE BELOW
+function attendanceCheck2(day){
+    let newArray=[]
+    for(let i=0;i<classRoom.length;i++){
+        let keys=Object.keys(classRoom[i])
+        let a=classRoom[i][keys]
+        for(let key of a){
+            if(key[day]){
+                newArray.push(keys[0])
+            }
+        }
+     } 
+    return newArray
+}
+console.log(attendanceCheck("Friday"));
