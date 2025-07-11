@@ -37,3 +37,39 @@ const rotateArray = (originalArray, rotateNum) => {
 }
 
 rotateNum Solution
+
+//Anu's method
+// YOUR CODE BELOW
+function rotateArray(originalArray,rotateNum){
+  if(rotateNum===0){
+    return originalArray
+  }else if(rotateNum<0){///123 231
+      for(let i=0;i<-rotateNum;i++){
+        temp=originalArray[0]
+        for(let j=0;j<originalArray.length;j++
+        ){
+            if(j==originalArray.length-1){
+                originalArray[j]=temp
+            }else{
+                originalArray[j]=originalArray[j+1]
+            }
+        }
+      }
+    return originalArray
+  }else{
+     for(let i=0;i<rotateNum;i++){ //123=312
+        
+        temp=originalArray[originalArray.length-1]
+        for(let j=originalArray.length-1;j>=0;j--
+        ){
+            if(j==0){
+                originalArray[j]=temp
+            }else{
+                originalArray[j]=originalArray[j-1]
+            }
+        }
+      }
+    return originalArray
+  }
+}
+console.log(rotateArray([1,2,3],1))
